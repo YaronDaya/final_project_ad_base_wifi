@@ -6,7 +6,7 @@ $( document ).ready(function() {
 			$("button").prop('disabled', true);
 			var formData = new FormData(this);
 			$.ajax({
-				url:     '../php/inc/insert.php',
+				url:     '../php/insert.php',
 				type:    'POST',
 				data:    formData,
 				async:   false,
@@ -29,7 +29,7 @@ $( document ).ready(function() {
 			$("button").prop('disabled', true);
 			var formData = new FormData(this);
 			$.ajax({
-				url:     'php/inc/login.php',
+				url:     'php/login.php',
 				type:    'POST',
 				data:    formData,
 				async:   false,
@@ -67,7 +67,7 @@ $("#singup_business").submit(function(){
     $("button").prop('disabled', true);
     var formData = new FormData(this);
     $.ajax({
-      url:     '../php/inc/business_singup.php',
+      url:     '../php/business_singup.php',
       type:    'POST',
       data:    formData,
       async:   false,
