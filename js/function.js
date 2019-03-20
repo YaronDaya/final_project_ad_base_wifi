@@ -1,4 +1,8 @@
 $( document ).ready(function() {
+	///////////////////////////////////////////////////////////////////////////////
+		$("#test").on("click",function(){
+			alert("here");
+		});
 ///////////////////////////////////////////////////////////////////////////////
 // sign up FORM
 	$("#singup_form").submit(function(){
@@ -44,22 +48,6 @@ $( document ).ready(function() {
 			});
 			return false;
 	});
-
-///////////////////////////////////////////////////////////////////////////////
-	$("#test").on("click",function(){
-		alert("here");
-	});
-///////////////////////////////////////////////////////////////////////////////
-	$("#tab_login").on("click",function(){
-		$("#Results_login").html("");
-		$(".singup").fadeOut();
-		$(".login").fadeIn();
-	})
-///////////////////////////////////////////////////////////////////////////////
-	$("#tab_signup").on("click",function(){
-		$(".login").fadeOut();
-		$(".singup").fadeIn();
-	})
 ///////////////////////////////////////////////////////////////////////////////
 /*sing up business*/
 $("#singup_business").submit(function(){
@@ -83,5 +71,25 @@ $("#singup_business").submit(function(){
     return false;
 });
 ///////////////////////////////////////////////////////////////////////////////
-
+/*sing up advertise*/
+$("#singup_advertise").submit(function(){
+    alert("singup_advertise");
+    $("button").prop('disabled', true);
+    var formData = new FormData(this);
+    $.ajax({
+      url:     '../php/singup_advertise.php',
+      type:    'POST',
+      data:    formData,
+      async:   false,
+      success: function(data) {
+        alert("success");
+          $("#result_singup_advertise").html(data);
+        $("button").prop('disabled', false);
+      },
+      cache: false,
+      contentType: false,
+      processData: false
+    });
+    return false;
+});
 });
