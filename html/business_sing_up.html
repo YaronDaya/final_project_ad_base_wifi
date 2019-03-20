@@ -5,17 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="../css/login_style.css" type="text/css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src = "js/function.js"></script>
+  <script src = "../js/function.js"></script>
 </head>
 <body>
   <div  class="singin">
-    <form id="log_in" method="post" action="../php/sing_up.php.php">
-      <h2 class="sing_in_h2">Sing Up</h2>
-      <input type="text" name="sing_up_first_name" placeholder="First Name" id="sing_up_first_name" onfocus="this.value=''">
-      <input type="text" name="sing_up_last_name" placeholder="Last Name" id="sing_up_last_name" onfocus="this.value=''">
-      <input type="email" name="sing_up_email" placeholder="user@gmail.com" id="sing_up_email" onfocus="this.value=''">
-      <input  type="date" name="sing_up_birhtday" placeholder="birhtday"  id="sing_up_birhtday" onfocus="this.value=''">
-      <input type="password" name="sing_up_password" placeholder="password" id="sing_up_password" onfocus="this.value=''">
+    <form id="singup_business">
+      <h2 class="sing_up_h2">Sing Up</h2>
+      <input type="text" name="sing_up_owner_name" placeholder="Owner Name" id="sing_up_owner_name" onfocus="this.value=''">
+      <input type="text" name="sing_up_company_name" placeholder="Company Name" id="sing_up_company_name" onfocus="this.value=''">
+      <input type="text" name="sing_up_addr_name" placeholder=" Address" id="sing_up_addr_name" onfocus="this.value=''">
+      <input type="email" name="sing_up_business_email" placeholder="user@gmail.com" id="sing_up_business_email" onfocus="this.value=''">
+      <input type="password" name="sing_up_business_password" placeholder="password" id="sing_up_business_password" onfocus="this.value=''">
       <button type="submit" name="button" class="button" id="tab_login">Sing Up</button>
       <div id="container">
         <a href="#" class="reset_pass">Reset password</a>
@@ -23,6 +23,6 @@
       </div><br><br>
       Do You Have Account <a href="../index.html" class="sing_up_account"> Sign In</a>
     </form>
-    <div id="result_login"></div>
+    <div id="result_singup_business"></div>
 </body>
 </html>
