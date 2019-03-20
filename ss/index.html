@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/login_style.css" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src = "js/function.js"></script>
+  <script src="js/popup_msg.js"></script>
+</head>
+<body>
+  <div  class="singin">
+    <form id="log_in" method="post" >
+      <h2 class="sing_in_h2">Log in</h2>
+      <input type="email" name="sing_in_email" placeholder="user@gmail.com" id="sing_in_email" onfocus="this.value='' ">
+      <input type="password" name="sing_in_password" placeholder="password" id="sing_in_password" onfocus="this.value='' ">
+      <button type="submit" name="button" class="button" id="tab_login" onclick="log_in()">Log in</button>
+      <a href="html/business_sing_up.html" class="business_sing_up">Bussiness Account Sing Up</a>
+      <a href="html/advertiser_sing_up.html" class="advertiser_sing_up"> Advertiser Account Sing Up</a>
+      <div id="container">
+        <a href="#" class="reset_pass">Reset password</a>
+        <a href="#" class="reset_pass">Forgot password</a>
+      </div><br><br>
+      Don't have Account ?<a href="html/sing_up.html" class="sing_up_account"> Sign Up</a>
+    </form>
+    <div id="result_login"></div>
+</body>
+</html>

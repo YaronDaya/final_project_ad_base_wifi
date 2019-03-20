@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css?family=Margarine');
+* {box-sizing: border-box;}
+body {  padding: 0;margin: 0;font-family:'Margarine', cursive;background-color:#F4F6F9;background-size: cover;}
+/*font:15px/1.5 Arial,helvetica,sans-serif*/
+  /*background-color: #ECECEC;*/
+.singin {background: rgba(44,62,80,0.7);padding: 40px; width:320px; margin: auto;margin-top: 80px;height:620px; margin-left: 260px;margin-bottom:120px; box-shadow:0 12px 15px 0 rgba(0,0,0,.24),0 17px 50px 0 rgba(0,0,0,.19);}
+.sing_in_h2 {color:#302D43;}
+.reset_pass {margin-right: 0px;font-size: 13px; text-decoration: none;}
+.sing_up_account{text-decoration: none;}
+form{width:240px;text-align: center;color:green;}
+input[type="text"] {width: 240px;text-align: center;background: transparent;border: none;border-bottom: 1px solid #fff;font-size: 16px;font-weight: 200px;padding: 10px 0; transition: border 0.5s; outline: none;color:black;background-color: #F4F6F9;margin-top: 10px;}
+input[type="password"] {width: 240px;text-align: center;background: transparent;border: none;border-bottom: 1px solid #fff;font-size: 16px;font-weight: 200px;padding: 12px 0; transition: border 0.5s; outline: none;color:black;background-color: #F4F6F9;margin-top: 10px;}
+input[type="email"] {width: 240px;text-align: center;background: transparent;border: none;border-bottom: 1px solid #fff;font-size: 16px;font-weight: 200px;padding: 12px 0; transition: border 0.5s; outline: none;color:black;background-color: #F4F6F9;margin-top: 10px;}
+input[type="date"] {width: 240px;text-align: center;background: transparent;border: none;border-bottom: 1px solid #fff;font-size: 16px;font-weight: 200px;padding: 12px 0; transition: border 0.5s; outline: none;color:black;background-color: #F4F6F9;margin-top: 10px;}
+input[type=button]{border: none;width: 190px; background:white;color:#000;font-size: 16px ;line-height: 25px ;padding: 10px 0;border-radius: 15px;cursor: pointer; margin-top: 15px;}
+input[type=button]:hover{color:#fff;background-color: black;}
+a{margin-top: 15px;}
+a:hover{color:#F4F6F9;}
+#container{display: flex;flex-direction: row; width: 100%; }
+#container a { margin-left: 15px;}
+.button{border: none;width: 190px; background:white;color:#000;font-size: 16px ;line-height: 25px ;padding: 10px 0;border-radius: 15px;cursor: pointer; margin-top: 15px;font-family:'Margarine', cursive;}
+.button:hover{color:#fff;background-color: black;}
+.business_sing_up  {border: none; width: 190px; background:white;color:#000;font-size: 16px ;line-height: 55px ;padding: 10px 0;border-radius: 15px;cursor: pointer; margin-top: 30px; text-decoration: none;}
+.advertiser_sing_up {border: none;width: 190px; background:white;color:#000;font-size: 16px ;line-height: 43px ;padding: 10px 0;border-radius: 15px;cursor: pointer; margin-top: 60px; text-decoration: none;}
+.business_sing_up:hover{color:#fff;background-color: black;}
+.advertiser_sing_up:hover{color:#fff;background-color: black;}
