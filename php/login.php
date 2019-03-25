@@ -6,22 +6,39 @@ include_once('mongo_connect.php');
 $email= $_POST['sing_in_email'];
 $password= $_POST['sing_in_password'];
 
-//echo "<br>".$firstname."  age:".$age;
+echo "<br>".$email."  age:".$password;
 
-$filter = ["email"=>$email, "password" => $password];
-//$filter = ["age"=>["$gt"=>"18"]]; /*/
+// test
+///////////////////////////////////////////////////////////
+// var_dump($manager);
+// // $bulk = new MongoDB\Driver\BulkWrite; // to write
+// // $doc = ['_id' => new MongoDB\BSON\ObjectID, 'email' => $email, 'password' => $password];
+// // $bulk->insert($doc);
+// // $manager->executeBulkWrite('testDB.Demo', $bulk);
+//
+//
+// $query = new MongoDB\Driver\Query([]);
+// $rows = $manager->executeQuery("testDB.Demo", $query);
+// foreach ($rows as $row) {
+// 	echo "$row->name : $row->age<br>";
+// 	}
+//
 
-$options = []; /* put desired options here, should you need any */
 
-$query = new MongoDB\Driver\Query($filter,$options);
+// almost ready
+///////////////////////////////////////////////////////////
+// $filter = [ "email" => $email , "password" => $password ];
+// $options = [];
+// $query = new MongoDB\Driver\Query($filter, $options);
+// $rows = $manager->executeQuery("testDB.Demo", $query); // $mongo contains the connection object to MongoDB
+// foreach($rows as $r){
+   // echo $r->email."<br>";
+// }
 
-$rows = $manager->executeQuery("testDB.Demo", $query);
-foreach ($rows as $row) {
-	echo "$row->email : $row->password <br>";
-	}
+/////////////// not in used
 //foreach($cursor as $document){
 //    $document = json_decode(json_encode($document),true);
-//    echo $document."Cantor kings of the realm";
+//    echo $document." $document";
 //	}
 }else {
   echo "failed";

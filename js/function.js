@@ -29,7 +29,7 @@ $( document ).ready(function() {
 ///////////////////////////////////////////////////////////////////////////////
 // login FORM
 	$("#log_in").submit(function(){
-			alert("login_form");
+			// alert("login_form");
 			$("button").prop('disabled', true);
 			var formData = new FormData(this);
 			$.ajax({
@@ -38,7 +38,9 @@ $( document ).ready(function() {
 				data:    formData,
 				async:   false,
 				success: function(data) {
-					alert("success");
+					if(data=="success"){
+						alert("success");	
+					}
 				   	$("#result_login").html(data);
 					$("button").prop('disabled', false);
 				},
