@@ -24,3 +24,4 @@ a:hover{color:#F4F6F9;}
 .advertiser_sing_up {border: none;width: 190px; background:white;color:#000;font-size: 16px ;line-height: 43px ;padding: 10px 0;border-radius: 15px;cursor: pointer; margin-top: 60px; text-decoration: none;}
 .business_sing_up:hover{color:#fff;background-color: black;}
 .advertiser_sing_up:hover{color:#fff;background-color: black;}
+#result_singup_business {  background-color: #F4F6F9;margin: 15% auto; /* 15% from the top and centered */padding: 20px;border: 1px solid #888;width: 80%;}
