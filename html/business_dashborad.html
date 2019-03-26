@@ -2,31 +2,32 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <link rel="stylesheet" href="css/business_dashborad.css">
+  <link rel="stylesheet" href="../css/business_dashborad.css">
   <title>bussines dash-borad</title>
   <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src = "../js/function.js"></script>
+  <script src = "../js/popup_msg.js"></script>
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript">
+  google.charts.load('current', {packages: ['corechart']});
+  google.charts.setOnLoadCallback(drawChart);
+  ...
+</script>
 </head>
 <body>
-  <section id="sidebar">
-    <nav>
-      <h1>Catifi Business Dash-Borad</h1>
-      <a href="#" class="active"> <span><i class="fa fa-wifi" aria-hidden="true"></i></span> how many acces-point you got </a>
-      <a href="#" class="active"> <span><i class="fa fa-user-circle" aria-hidden="true"></i></span> How many customers are online </a>
-      <a href="#" class="active"> <span><i class="fa fa-folder-open-o" aria-hidden="true"></i></span> folders </a>
-      <a href="#" class="active"> <span><i class="fa fa-info" aria-hidden="true"></i></span> info </a>
-      <a href="#" class="active"> <span><i class="fa fa-pie-chart" aria-hidden="true"></i></span> pie-chart </a>
-    </nav>
-  </section>
-  <header>
-    <div class="container">
-      <div class="navbar">
-        <ul>
-          <li><i class="fa fa-user-o" aria-hidden="true"></i></li>
-          <li<i class="fa fa-bell-o" aria-hidden="true"></i></li>
-          <li><i class="fa fa-bar-chart" aria-hidden="true"></i></li>
-        </ul>
-      </div>
-    </div>
-  </header>
+  <div class="sidenav" id="sidenav">
+    <form id="sidenav_from">
+    <a href="#" onclick="this.innerHTML='Ooops!'" id = "a_info"><i class="fa fa-info-circle" aria-hidden="true"></i>Info</a>
+    <a href="#"><i class="fa fa-pie-chart" aria-hidden="true"></i>Chart</a>
+    <a href ="#"><i class="fa fa-wifi" aria-hidden="true"></i>Wifi</a>
+    <a href="#"><i class="fa fa-th" aria-hidden="true"></i>Tables</a>
+  </form>
+  </div>
+  <div class="main">
+  <center><h3>bussines dash-borad</h3></center>
+  <div id="info"></div>
+    <div id="chart"></div>
+</div>
 </body>
 </html>

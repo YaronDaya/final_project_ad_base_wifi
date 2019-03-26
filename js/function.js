@@ -10,7 +10,7 @@ $( document ).ready(function() {
 			$("button").prop('disabled', true);
 			var formData = new FormData(this);
 			$.ajax({
-				url:     '../php/insert.php',
+				url:     '../php/signup_mysql.php',
 				type:    'POST',
 				data:    formData,
 				async:   false,
@@ -38,11 +38,9 @@ $( document ).ready(function() {
 				data:    formData,
 				async:   false,
 				success: function(data) {
-					if(data=="success"){
-						alert("success");	
-					}
+					// alert("success");
 				   	$("#result_login").html(data);
-					$("button").prop('disabled', false);
+						$("button").prop('disabled', false);
 				},
 				cache: false,
 				contentType: false,
@@ -57,7 +55,7 @@ $("#singup_business").submit(function(){
     $("button").prop('disabled', true);
     var formData = new FormData(this);
     $.ajax({
-      url:     '../php/business_singup.php',
+      url:     '../php/business_singup_mysql.php',
       type:    'POST',
       data:    formData,
       async:   false,
@@ -79,7 +77,7 @@ $("#singup_advertise").submit(function(){
     $("button").prop('disabled', true);
     var formData = new FormData(this);
     $.ajax({
-      url:     '../php/singup_advertise.php',
+      url:     '../php/ad_singup_mysql.php',
       type:    'POST',
       data:    formData,
       async:   false,
@@ -94,4 +92,32 @@ $("#singup_advertise").submit(function(){
     });
     return false;
 });
+
+
+$("#sidenav_from").submit(function(){
+    alert("someting");
+  /*li in place of button??*/  $("button").prop('disabled', true);
+    var formData = new FormData(this);
+    $.ajax({
+      url:     '../php/business_dashborad.php',
+      type:    'POST',
+      data:    formData,
+      async:   false,
+      success: function(data) {
+        alert("success");
+          $("#info").html(data);
+        /*li in place of button??*/$("button").prop('disabled', false);
+      },
+      cache: false,
+      contentType: false,
+      processData: false
+    });
+    return false;
+});
+
+
+/////////////////////////////////////////////////////////////
+/*dashborads*/
+///////////
+
 });
